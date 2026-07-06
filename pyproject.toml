@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "banshee"
+version = "0.1.0"
+description = "BANSHEE — open benchmarks, defenses, and forensics for AI persistent memory"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [
+  { name = "BANSHEE", email = "hello@banshee-research.org" }
+]
+keywords = ["ai", "security", "memory", "rag", "vector-database", "integrity", "forensics"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "numpy>=1.26.0",
+  "pydantic>=2.5.0",
+  "httpx>=0.26.0",
+  "rich>=13.7.0",
+  "typer>=0.9.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4.0",
+  "pytest-cov>=4.1.0",
+  "ruff>=0.3.0",
+  "mypy>=1.8.0",
+]
+rag = [
+  "langchain>=0.1.0",
+  "openai>=1.10.0",
+  "faiss-cpu>=1.7.4",
+]
+full = ["banshee[dev,rag]"]
+
+[project.scripts]
+banshee = "banshee.cli:app"
+
+[project.urls]
+Homepage = "https://banshee-research.org"
+Repository = "https://github.com/banshee-research/banshee"
+Issues = "https://github.com/banshee-research/banshee/issues"
+Documentation = "https://docs.banshee-research.org"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["banshee*"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=banshee --cov-report=term-missing"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+ignore_missing_imports = true

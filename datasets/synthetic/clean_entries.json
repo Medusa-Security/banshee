@@ -1,0 +1,58 @@
+[
+  {
+    "id": "00000000-0000-0000-0000-000000000001",
+    "content": "The Transformer architecture was introduced in 'Attention Is All You Need' (Vaswani et al., 2017). It relies entirely on self-attention mechanisms and eliminates recurrence.",
+    "source": "https://arxiv.org/abs/1706.03762",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "architecture", "year": 2017 }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000002",
+    "content": "RAG (Retrieval-Augmented Generation) combines a retriever with a generative model to ground responses in external knowledge, reducing hallucinations.",
+    "source": "https://arxiv.org/abs/2005.11401",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "rag", "year": 2020 }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000003",
+    "content": "Vector databases store and index high-dimensional embeddings to enable semantic similarity search using approximate nearest-neighbour algorithms.",
+    "source": "https://www.pinecone.io/learn/vector-database/",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "vector_db" }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000004",
+    "content": "The capital of France is Paris. The city has been the country's political and cultural centre for over 1,000 years.",
+    "source": "https://en.wikipedia.org/wiki/Paris",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "geography" }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000005",
+    "content": "Python's asyncio library provides infrastructure for writing single-threaded concurrent code using coroutines, multiplexing I/O access over sockets and other resources.",
+    "source": "https://docs.python.org/3/library/asyncio.html",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "programming" }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000006",
+    "content": "SHA-256 is a cryptographic hash function that produces a 256-bit digest. It is considered collision-resistant for practical purposes.",
+    "source": "https://csrc.nist.gov/publications/detail/fips/180/4/final",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "cryptography" }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000007",
+    "content": "Large language models are trained using self-supervised objectives on large text corpora, then aligned via RLHF or similar techniques.",
+    "source": "https://arxiv.org/abs/2203.02155",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "llm_training" }
+  },
+  {
+    "id": "00000000-0000-0000-0000-000000000008",
+    "content": "The OWASP Top 10 for LLM Applications lists prompt injection as the number one risk for large language model deployments.",
+    "source": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+    "checksum": null,
+    "metadata": { "label": "clean", "topic": "security" }
+  }
+]

@@ -1,0 +1,1 @@
+# banshee core module
