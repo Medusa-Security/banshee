@@ -28,7 +28,7 @@ If an AI agent tries to execute a dangerous shell command, leak an API key, or w
 ## Installation
 
 ```bash
-git clone https://github.com/banshee/banshee.git
+git clone https://github.com/abhay-1310/banshee.git
 cd banshee
 pip install -e ".[dev]"
 ```
