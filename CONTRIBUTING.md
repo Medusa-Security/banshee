@@ -23,6 +23,12 @@ Thank you for your interest in contributing to BANSHEE. This document outlines h
 git clone https://github.com/abhay-1310/banshee.git
 cd banshee
 ```
+OR
+
+```bash
+git clone https://github.com/Medusa-Security/banshee.git
+cd banshee
+```
 
 ### 2. Set Up the Environment
 
@@ -68,12 +74,6 @@ Push your branch and open a PR against `main`. Fill in the PR template with:
 - Formatter: [ruff](https://docs.astral.sh/ruff/)
 - Docstrings: Google style
 - Keep functions focused and well-named
-
----
-
-## Reporting Security Issues
-
-Do **not** open a public issue for security vulnerabilities. Email the maintainers directly at `security@banshee-research.org`.
 
 ---
 
