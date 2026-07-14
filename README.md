@@ -1,6 +1,5 @@
 # BANSHEE
-
-> The Ultimate AI Agent Security Framework. 
+ 
 > Protect your autonomous AI agents from prompt injections, SSRF, data exfiltration, command injections, and memory tampering.
 
 ---
