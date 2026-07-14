@@ -10,7 +10,7 @@ readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [
-  { name = "BANSHEE", email = "hello@banshee-research.org" }
+  { name = "BANSHEE", email = "guptasanjay6283@gmail.com" }
 ]
 keywords = ["ai", "security", "memory", "rag", "vector-database", "integrity", "forensics"]
 classifiers = [
@@ -50,10 +50,10 @@ full = ["banshee[dev,rag]"]
 banshee = "banshee.cli:app"
 
 [project.urls]
-Homepage = "https://banshee-research.org"
-Repository = "https://github.com/banshee-research/banshee"
-Issues = "https://github.com/banshee-research/banshee/issues"
-Documentation = "https://docs.banshee-research.org"
+Homepage = "https://github.com/Medusa-Security"
+Repository = "https://github.com/abhay-1310/banshee"
+Issues = "https://github.com/abhay-1310/banshee/issues"
+Documentation = "https://github.com/Medusa-Security/banshee"
 
 [tool.setuptools.packages.find]
 where = ["."]
